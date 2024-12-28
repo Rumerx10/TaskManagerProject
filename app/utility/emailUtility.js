@@ -8,7 +8,7 @@ import {
   MAIL_SECURITY,
 } from "../config/config.js";
 
-const SendEmail = async (EmailTo, EmailSubject, EmailText) => {
+export const SendEmail = async (EmailTo, EmailSubject, EmailText) => {
   let transporter = nodemailer.createTransport({
     host: EMAIL_HOST,
     port: EMAIL_PORT,
